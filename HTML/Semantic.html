@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <!-- In Style Class represent # -->
     <style type="text/css">
-        #main-header{
+        #main-header {
             text-align: center;
             background-color: black;
             color: white;
             padding: 10px;
         }
 
-        #main-footer{
+        .main-footer {
             text-align: center;
             background-color: black;
             color: white;
             padding: 10px;
             font-size: 18px;
         }
+
+        nav {
+            border-bottom: 1px solid black;
+        }
+
+        .crumbs ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .crumb {
+            display: inline-block;
+        }
+
+        .crumb a::after {
+            display: inline-block;
+            color: #000;
+            content: '>';
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+        }
     </style>
 </head>
+
 <body>
-    <header id="main-header">
-        <h1>My Website</h1>
-    </header>
+    <nav class="crumbs">
+        <header id="main-header">
+            <h1>My Website</h1>
+            <ol>
+                <li class="crumb"><a href="#">Bikes</a></li>
+                <li class="crumb"><a href="#">BMX</a></li>
+                <li class="crumb">Jump Bike 3000</li>
+            </ol>
+        </header>
+    </nav>
+
     <br>
 
     <a href="index.html"> Go to Index </a>
@@ -34,8 +66,8 @@
         <article class="post">
             <h3>Blog Post One</h3>
             <small>Posted by Michal on Nov 14</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Sed id eaque ad ex, in optio rem dicta omnis, illo accusamus ipsa, illum voluptates numquam corrupti. 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sed id eaque ad ex, in optio rem dicta omnis, illo accusamus ipsa, illum voluptates numquam corrupti.
                 Perferendis laborum illum alias ipsa?
             </p>
             <a href="post.html">Read More</a>
@@ -43,8 +75,8 @@
         <article class="post">
             <h3>Blog Post Two</h3>
             <small>Posted by Michal on Nov 14</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Sed id eaque ad ex, in optio rem dicta omnis, illo accusamus ipsa, illum voluptates numquam corrupti. 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sed id eaque ad ex, in optio rem dicta omnis, illo accusamus ipsa, illum voluptates numquam corrupti.
                 Perferendis laborum illum alias ipsa?
             </p>
             <a href="post.html">Read More</a>
@@ -52,8 +84,8 @@
         <article class="post">
             <h3>Blog Post Three</h3>
             <small>Posted by Michal on Nov 14</small>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Sed id eaque ad ex, in optio rem dicta omnis, illo accusamus ipsa, illum voluptates numquam corrupti. 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sed id eaque ad ex, in optio rem dicta omnis, illo accusamus ipsa, illum voluptates numquam corrupti.
                 Perferendis laborum illum alias ipsa?
             </p>
             <a href="post.html">Read More</a>
@@ -63,16 +95,17 @@
     <aside>
         <h3>Categories</h3>
         <nav>
-        <ul>
-            <li><a href="#">Categorie 1</a></li>
-            <li><a href="#">Categorie 2</a></li>
-            <li><a href="#">Categorie 3</a></li>
-        </ul>
+            <ul>
+                <li><a href="#">Categorie 1</a></li>
+                <li><a href="#">Categorie 2</a></li>
+                <li><a href="#">Categorie 3</a></li>
+            </ul>
         </nav>
     </aside>
-
-    <footer id="main-footer">
+<footer class="main-footer">
         <p>Copyright &copy; 2022</p>
     </footer>
+    
 </body>
+
 </html>

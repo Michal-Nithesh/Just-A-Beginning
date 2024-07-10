@@ -4,8 +4,6 @@
 <head>
     <title>HTML Cheat Sheet</title>
 </head>
-
-<body>
     <a href="Semantic.html">Go to Semantic Code Page</a>
     <hr>
     <br>
@@ -19,7 +17,7 @@
 
     <!--Paragraph-->
     <p>
-        Lorem ipsum dolor sit amet <a href="http://google.com" target="_blank">adipisicing elit</a>.
+        Lorem ipsum dolor sit amet <a href="http://google.com" target="_blank">adipisicing </a>elit.
         Repellendus unde inventore molestiae tempore provident, nulla illo explicabo accusantium minima, dicta modi
         totam placeat beatae autem excepturi.
         Dolores molestiae omnis magnam.10
@@ -29,6 +27,9 @@
         Repellendus unde inventore molestiae tempore provident, nulla illo explicabo accusantium minima, dicta modi
         totam placeat beatae autem excepturi.
         Dolores molestiae omnis magnam.10
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Rem praesentium excepturi ipsa! Reiciendis non, doloremque impedit provident, quisquam possimus quod tenetur aliquid consectetur accusamus, similique assumenda odio consequatur distinctio sint?
     </p>
 
     <!--Unordered List-->
@@ -81,6 +82,11 @@
                 <td>roronoazoro@gmail.com</td>
                 <td>22</td>
             </tr>
+            <tr>
+                <td>Snow Michael</td>
+                <td>snowmichael@gmail.com</td>
+                <td>19</td>
+            </tr>
         </tbody>
     </table>
 
@@ -91,20 +97,25 @@
     <br>
 
     <!-- Forms -->
-    <form action="process.php" method="POST">
+    <form action="https://google.com" method="POST">
         <div>
             <label>First Name</label>
-            <input type="text" name="firstName" placeholder="Enter FirstName">
+            <input type="text" name="firstname" placeholder="Enter a FirstName">
         </div>
         <br>
         <div>
             <label>Last Name</label>
-            <input type="text" name="lastName" placeholder="Enater LasName">
+            <input type="text" name="lastName" placeholder="Enter LasName">
         </div>
         <br>
         <div>
             <label>Email</label>
             <input type="email" name="email" placeholder="Enter your Email">
+        </div>
+        <br>
+        <div>
+            <lable>Password</lable>
+            <input type="password" name="password" placeholder="Enter your Password">
         </div>
         <br>
         <div>
@@ -142,6 +153,7 @@
     <!-- Image -->
     <a href="https://th.bing.com/th/id/OIP.IhiqRWFamp-enjV2csKdzwHaE8?rs=1&pid=ImgDetMain">
     <img src="https://th.bing.com/th/id/OIP.IhiqRWFamp-enjV2csKdzwHaE8?rs=1&pid=ImgDetMain" alt="Not Found" width="200px">
+    <img src="./img/check.jpg" alt="Not Found" width="100px">
     </a>
 
     <!-- Quotations -->
@@ -155,7 +167,101 @@
 
      <p>It's very <cite>Awesome to learn HTML</cite></p>
 
-    <div style="margin-top: 500px;"></div>
+    <div>
+        <div>
+        <lable>Checking</lable>
+        <input type="button" name="check">
+        </div>
+        <br>
+        <lable>Checking</lable>
+        <input type="checkbox" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="color" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="date" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="datetime" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="datetime-local" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="email" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="file" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="hidden" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="image" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="month" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="number" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="password" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="radio" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="range" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="reset" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="search" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="submit" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="tel" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="text" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="time" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="url" name="check">
+        <br>
+        <lable>Checking</lable>
+        <input type="week" name="check">
+        
+        </div>
+
+        <fieldset>
+            <legend>Select your Gender:</legend>
+          
+            <div>
+              <input type="radio" id="huey" name="drone" value="huey" checked />
+              <label for="huey">Male</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="dewey" name="drone" value="dewey" />
+              <label for="dewey">Female</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="louie" name="drone" value="louie" />
+              <label for="louie">Other</label>
+            </div>
+          </fieldset>
+
+        <div style="margin-top: 500px;"></div>
+
 </body>
 
 </html>
